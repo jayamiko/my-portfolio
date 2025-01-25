@@ -34,14 +34,16 @@ export default function Greeting(props) {
                   text="⭐ Star Me On Github"
                   newTab={true}
                   href={greeting.portfolio_repository}
-                  theme={theme}
                   className="portfolio-repo-btn"
+                  theme={theme}
+                />
+                <Button
+                  text="See my resume"
+                  newTab={true}
+                  href={greeting.resumeLink}
+                  theme={theme}
                 />
               </div>
-              {/* <div className="button-greeting-div">
-              <Button text="Contact me" href="#contact" />
-              <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
-            </div> */}
             </div>
           </div>
           <div className="greeting-image-div">

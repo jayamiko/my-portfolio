@@ -25,10 +25,6 @@
   flex: 1;
   margin-bottom: 30px;
 }
-.button-greeting-div {
-  display: flex;
-  margin-top: 20px;
-}
 
 .greeting-text {
   margin-top: 80px;
@@ -39,13 +35,13 @@
 
 .greeting-nickname {
   font-size: 30px;
-  line-height: 0px;
   font-family: "Google Sans Bold Italic";
 }
 
 .greeting-text-p {
-  font-size: 40px;
-  line-height: 40px;
+  font-size: 20px;
+  font-style: italic;
+  line-height: 28px;
   margin-right: 40px;
   font-family: "Google Sans Medium";
 }
@@ -53,6 +49,12 @@
 .greeting-image-div > * {
   max-width: 100%;
   height: auto;
+}
+
+.portfolio-repo-btn-div {
+  width: 100%;
+  display: flex;
+  gap: 4px;
 }
 
 /* Media Query */
@@ -65,9 +67,6 @@
   }
 }
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
   .greeting-text {
     font-size: 30px;
     margin-top: 0px;

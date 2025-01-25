@@ -40,6 +40,11 @@
   src: local("Google Sans Regular"),
     url("./assets/fonts/GoogleSans-Regular.ttf") format("woff");
 }
+@font-face {
+  font-family: "Playwrite India";
+  src: local("Playwrite India"),
+    url("./assets/fonts//PlaywriteIN-VariableFont_wght.ttf") format("woff");
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;

@@ -17,70 +17,75 @@ const seo = {
   },
 };
 
+export const myGithubUrl = "https://github.com/jayamiko";
+
 //Home Page
 const greeting = {
-  title: "Ashutosh Hathidara",
-  logo_name: "AshutoshHathidara",
-  nickname: "layman_brother",
+  title: "Jaya Miko Yoga Pratama",
+  logo_name: "Jaya Miko Yoga Pratama",
+  nickname: "jayamikoyp",
   subTitle:
-    "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
+    "A skilled professional in designing, developing, and maintaining high-performance software solutions. Proficient in modern programming languages like JavaScript and Python, with a strong foundation in algorithms, data structures, and software engineering principles. Experienced in collaborating with cross-functional teams to deliver innovative, scalable, and user-centric applications. Passionate about solving complex problems and driving impactful digital transformation.",
   resumeLink:
-    "https://drive.google.com/file/d/1bXRknv_h-XI_3CQ3SGPteGODtvEb7YvI/view?usp=sharing",
-  portfolio_repository: "https://github.com/ashutosh1919/masterPortfolio",
-  githubProfile: "https://github.com/ashutosh1919",
+    "https://drive.google.com/file/d/1Sx4dtHSNKDBbZOAdYnl1r4wqn2OPGvmE/view?usp=sharing",
+  portfolio_repository: `${myGithubUrl}/Dewe-Tour-Web-Socket.io`,
+  githubProfile: myGithubUrl,
 };
 
 const socialMediaLinks = [
-  /* Your Social Media Link */
-  // github: "https://github.com/ashutosh1919",
-  // linkedin: "https://www.linkedin.com/in/ashutosh-hathidara-88710b138/",
-  // gmail: "ashutoshhathidara98@gmail.com",
-  // gitlab: "https://gitlab.com/ashutoshhathidara98",
-  // facebook: "https://www.facebook.com/laymanbrother.19/",
-  // twitter: "https://twitter.com/ashutosh_1919",
-  // instagram: "https://www.instagram.com/layman_brother/"
-
   {
     name: "Github",
-    link: "https://github.com/ashutosh1919",
+    link: myGithubUrl,
     fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
     backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/ashutosh1919/",
+    link: "https://www.linkedin.com/in/jayamiko/",
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
   {
     name: "YouTube",
-    link: "https://youtube.com/c/DevSense19",
+    link: "https://www.youtube.com/@_mjaya10",
     fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
     backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
   },
   {
     name: "Gmail",
-    link: "mailto:ashutoshhathidara98@gmail.com",
+    link: "mailto:jayamiko4@gmail.com",
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
-  {
-    name: "X-Twitter",
-    link: "https://twitter.com/ashutosh_1919",
-    fontAwesomeIcon: "fa-x-twitter", // Reference https://fontawesome.com/icons/x-twitter?f=brands&s=solid
-    backgroundColor: "#000000", // Reference https://simpleicons.org/?q=x
-  },
-  {
-    name: "Facebook",
-    link: "https://www.facebook.com/laymanbrother.19/",
-    fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
-    backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
-  },
+  // {
+  //   name: "X-Twitter",
+  //   link: "https://twitter.com/ashutosh_1919",
+  //   fontAwesomeIcon: "fa-x-twitter", // Reference https://fontawesome.com/icons/x-twitter?f=brands&s=solid
+  //   backgroundColor: "#000000", // Reference https://simpleicons.org/?q=x
+  // },
+  // {
+  //   name: "Facebook",
+  //   link: "https://www.facebook.com/laymanbrother.19/",
+  //   fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
+  //   backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
+  // },
   {
     name: "Instagram",
-    link: "https://www.instagram.com/layman_brother/",
+    link: "https://www.instagram.com/jayamikoyp/",
     fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
     backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
+  },
+  {
+    name: "Threads",
+    link: "https://www.threads.net/@jayamikoyp",
+    fontAwesomeIcon: "fa-threads", // Reference https://fontawesome.com/icons/instagram?style=brands
+    backgroundColor: "#000", // Reference https://simpleicons.org/?q=instagram
+  },
+  {
+    name: "Whatsapp",
+    link: "https://wa.me/6281299585762",
+    fontAwesomeIcon: "fa-whatsapp", // Reference https://fontawesome.com/icons/instagram?style=brands
+    backgroundColor: "#128C7E", // Reference https://simpleicons.org/?q=instagram
   },
 ];
 
