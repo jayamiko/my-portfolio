@@ -7,53 +7,62 @@ const settings = {
 
 //SEO Related settings
 const seo = {
-  title: "Ashutosh's Portfolio",
+  title: "Jaya Miko's Portfolio",
   description:
     "A passionate individual who always thrives to work on end to end products which develop sustainable and scalable social and technical systems to create impact.",
   og: {
-    title: "Ashutosh Hathidara Portfolio",
+    title: "Jaya Miko Yoga Pratama Portfolio",
     type: "website",
-    url: "http://ashutoshhathidara.com/",
+    url: "http://jayamiko.com/",
   },
 };
 
-export const myGithubUrl = "https://github.com/jayamiko";
+export const SocialMediaLink = {
+  Github: "https://github.com/jayamiko",
+  Linkedin: "https://www.linkedin.com/in/jayamiko/",
+  Youtube: "https://www.youtube.com/@_mjaya10",
+  Email: "jayamiko4@gmail.com",
+  Instagram: "https://www.instagram.com/jayamikoyp/",
+  Threads: "https://www.threads.net/@jayamikoyp",
+  Whatsapp: "https://wa.me/6281299585762",
+};
 
 //Home Page
 const greeting = {
   title: "Jaya Miko Yoga Pratama",
   logo_name: "Jaya Miko Yoga Pratama",
   nickname: "jayamikoyp",
-  subTitle:
-    "A skilled professional in designing, developing, and maintaining high-performance software solutions. Proficient in modern programming languages like JavaScript and Python, with a strong foundation in algorithms, data structures, and software engineering principles. Experienced in collaborating with cross-functional teams to deliver innovative, scalable, and user-centric applications. Passionate about solving complex problems and driving impactful digital transformation.",
+  subTitle: `
+    Skilled in designing, developing, and maintaining high-performance software. Proficient in JavaScript, Typescript, Go, MySQL and software engineering principles. Experienced in building scalable, user-centric applications and solving complex problems.
+  `,
   resumeLink:
     "https://drive.google.com/file/d/1Sx4dtHSNKDBbZOAdYnl1r4wqn2OPGvmE/view?usp=sharing",
-  portfolio_repository: `${myGithubUrl}/Dewe-Tour-Web-Socket.io`,
-  githubProfile: myGithubUrl,
+  portfolio_repository: `${SocialMediaLink.Github}/Dewe-Tour-Web-Socket.io`,
+  githubProfile: SocialMediaLink.Github,
 };
 
 const socialMediaLinks = [
   {
     name: "Github",
-    link: myGithubUrl,
+    link: SocialMediaLink.Github,
     fontAwesomeIcon: "fa-github", // Reference https://fontawesome.com/icons/github?style=brands
     backgroundColor: "#181717", // Reference https://simpleicons.org/?q=github
   },
   {
     name: "LinkedIn",
-    link: "https://www.linkedin.com/in/jayamiko/",
+    link: SocialMediaLink.Linkedin,
     fontAwesomeIcon: "fa-linkedin-in", // Reference https://fontawesome.com/icons/linkedin-in?style=brands
     backgroundColor: "#0077B5", // Reference https://simpleicons.org/?q=linkedin
   },
   {
     name: "YouTube",
-    link: "https://www.youtube.com/@_mjaya10",
+    link: SocialMediaLink.Youtube,
     fontAwesomeIcon: "fa-youtube", // Reference https://fontawesome.com/icons/youtube?style=brands
     backgroundColor: "#FF0000", // Reference https://simpleicons.org/?q=youtube
   },
   {
     name: "Gmail",
-    link: "mailto:jayamiko4@gmail.com",
+    link: `mailto:${SocialMediaLink.Email}`,
     fontAwesomeIcon: "fa-google", // Reference https://fontawesome.com/icons/google?style=brands
     backgroundColor: "#D14836", // Reference https://simpleicons.org/?q=gmail
   },
@@ -71,19 +80,19 @@ const socialMediaLinks = [
   // },
   {
     name: "Instagram",
-    link: "https://www.instagram.com/jayamikoyp/",
+    link: SocialMediaLink.Instagram,
     fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/instagram?style=brands
     backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=instagram
   },
   {
     name: "Threads",
-    link: "https://www.threads.net/@jayamikoyp",
+    link: SocialMediaLink.Threads,
     fontAwesomeIcon: "fa-threads", // Reference https://fontawesome.com/icons/instagram?style=brands
     backgroundColor: "#000", // Reference https://simpleicons.org/?q=instagram
   },
   {
     name: "Whatsapp",
-    link: "https://wa.me/6281299585762",
+    link: SocialMediaLink.Whatsapp,
     fontAwesomeIcon: "fa-whatsapp", // Reference https://fontawesome.com/icons/instagram?style=brands
     backgroundColor: "#128C7E", // Reference https://simpleicons.org/?q=instagram
   },
@@ -92,7 +101,7 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Full Stack Development",
+      title: "Web Development",
       fileName: "FullStackImg",
       skills: [
         "⚡ Building responsive website front end using React and Next Js",
@@ -180,31 +189,17 @@ const skills = {
       fileName: "DataScienceImg",
       skills: [
         "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
+        "⚡ Data science with Python and R as programming language",
         "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
       ],
       softwareSkills: [
         {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            backgroundColor: "transparent",
-          },
+          skillName: "MySQL",
+          fontAwesomeClassname: "simple-icons:mysql",
         },
         {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            backgroundColor: "white",
-            color: "#D00000",
-          },
-        },
-        {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
-          style: {
-            backgroundColor: "transparent",
-          },
+          skillName: "R",
+          fontAwesomeClassname: "simple-icons:r",
         },
         {
           skillName: "Python",
@@ -214,10 +209,10 @@ const skills = {
             color: "#3776AB",
           },
         },
-        {
-          skillName: "Deeplearning",
-          imageSrc: "deeplearning_ai_logo.png",
-        },
+        // {
+        //   skillName: "Deeplearning",
+        //   imageSrc: "deeplearning_ai_logo.png",
+        // },
       ],
     },
     {
@@ -231,10 +226,10 @@ const skills = {
       ],
       softwareSkills: [
         {
-          skillName: "GCP",
-          fontAwesomeClassname: "simple-icons:googlecloud",
+          skillName: "Redis",
+          fontAwesomeClassname: "simple-icons:redis",
           style: {
-            color: "#4285F4",
+            color: "#D82C20",
           },
         },
         {
@@ -244,13 +239,13 @@ const skills = {
             color: "#FF9900",
           },
         },
-        {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:microsoftazure",
-          style: {
-            color: "#0089D6",
-          },
-        },
+        // {
+        //   skillName: "Azure",
+        //   fontAwesomeClassname: "simple-icons:microsoftazure",
+        //   style: {
+        //     color: "#0089D6",
+        //   },
+        // },
         {
           skillName: "Firebase",
           fontAwesomeClassname: "simple-icons:firebase",
@@ -288,45 +283,45 @@ const skills = {
         },
       ],
     },
-    {
-      title: "UI/UX Design",
-      fileName: "DesignImg",
-      skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2",
-          },
-        },
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
-          },
-        },
-        {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: {
-            color: "#FF7C00",
-          },
-        },
-        {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
-          style: {
-            color: "#000000",
-          },
-        },
-      ],
-    },
+    // {
+    //   title: "UI/UX Design",
+    //   fileName: "DesignImg",
+    //   skills: [
+    //     "⚡ Designing highly attractive user interface for mobile and web applications",
+    //     "⚡ Customizing logo designs and building logos from scratch",
+    //     "⚡ Creating the flow of application functionalities to optimize user experience",
+    //   ],
+    //   softwareSkills: [
+    //     {
+    //       skillName: "Adobe XD",
+    //       fontAwesomeClassname: "simple-icons:adobexd",
+    //       style: {
+    //         color: "#FF2BC2",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Figma",
+    //       fontAwesomeClassname: "simple-icons:figma",
+    //       style: {
+    //         color: "#F24E1E",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Adobe Illustrator",
+    //       fontAwesomeClassname: "simple-icons:adobeillustrator",
+    //       style: {
+    //         color: "#FF7C00",
+    //       },
+    //     },
+    //     {
+    //       skillName: "Inkscape",
+    //       fontAwesomeClassname: "simple-icons:inkscape",
+    //       style: {
+    //         color: "#000000",
+    //       },
+    //     },
+    //   ],
+    // },
   ],
 };
 

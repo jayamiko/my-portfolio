@@ -27,7 +27,7 @@ class SkillSection extends Component {
           return (
             <div key={i} className="skills-main-div">
               <Fade left duration={2000}>
-                <div className="skills-image-div">
+                <div className="skills-image-div border-2">
                   {/* <img
                     alt="Ashutosh is Analysing Data"
                     src={require(`../../assets/images/${skill.imagePath}`)}

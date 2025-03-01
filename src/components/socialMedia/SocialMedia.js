@@ -8,7 +8,7 @@ const IconWrapper = styled.span`
     background-color: ${(props) => props.backgroundColor};
   }
   &:hover i {
-    background-color: ${({ theme }) => theme.text};
+    transform: scale(1.1);
     transition: 0.3s ease-in;
   }
 `;
@@ -21,14 +21,13 @@ export default function socialMedia(props) {
           <a
             key={i}
             href={media.link}
-            className={`icon-button`}
+            className={`icon-button cursor-pointer`}
             target="_blank"
             rel="noopener noreferrer"
           >
             <IconWrapper {...media} {...props}>
               <i className={`fab ${media.fontAwesomeIcon}`}></i>
             </IconWrapper>
-            {/* <span></span> */}
           </a>
         );
       })}
