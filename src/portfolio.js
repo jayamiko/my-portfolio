@@ -329,52 +329,51 @@ const skills = {
 const competitiveSites = {
   competitiveSites: [
     {
-      siteName: "LeetCode",
-      iconifyClassname: "simple-icons:leetcode",
+      siteName: "Dumbways",
+      iconifyClassname: null,
+      imageSrc: "dumbways-logo.png",
       style: {
-        color: "#F79F1B",
+        width: 60,
+        height: 60,
       },
-      profileLink: "https://leetcode.com/layman_brother/",
+      profileLink: "https://dumbways.id/",
     },
     {
       siteName: "HackerRank",
       iconifyClassname: "simple-icons:hackerrank",
       style: {
         color: "#2EC866",
+        width: 60,
+        height: 60,
       },
-      profileLink: "https://www.hackerrank.com/layman_brother",
+      profileLink: "https://www.hackerrank.com/jayamiko",
     },
     {
-      siteName: "Codechef",
-      iconifyClassname: "simple-icons:codechef",
+      siteName: "Unisma Bekasi",
+      imageSrc: "unisma.png",
       style: {
-        color: "#5B4638",
+        width: 60,
+        height: 60,
       },
-      profileLink: "https://www.codechef.com/users/ashutosh_1919",
+      profileLink: "https://unismabekasi.ac.id/",
     },
     {
-      siteName: "Codeforces",
-      iconifyClassname: "simple-icons:codeforces",
+      siteName: "DQLab Indonesia",
+      imageSrc: "dqlab-logo.webp",
       style: {
-        color: "#1F8ACB",
+        width: 120,
+        height: 40,
       },
-      profileLink: "http://codeforces.com/profile/layman_brother",
+      profileLink: "https://dqlab.id/",
     },
     {
-      siteName: "Hackerearth",
-      iconifyClassname: "simple-icons:hackerearth",
+      siteName: "EFE Indonesia",
+      imageSrc: "efe-indonesia.webp",
       style: {
-        color: "#323754",
+        width: 200,
+        height: 50,
       },
-      profileLink: "https://www.hackerearth.com/@ashutosh391",
-    },
-    {
-      siteName: "Kaggle",
-      iconifyClassname: "simple-icons:kaggle",
-      style: {
-        color: "#20BEFF",
-      },
-      profileLink: "https://www.kaggle.com/laymanbrother",
+      profileLink: "https://efeindonesia.id/",
     },
   ],
 };

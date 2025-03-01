@@ -15,7 +15,7 @@ class CompetitiveSites extends React.Component {
                 style={{ marginBottom: "5px" }}
                 overlay={
                   <Tooltip id={`tooltip-top`}>
-                    <strong>{logo.siteName}</strong>
+                    <i>{logo.siteName}</i>
                   </Tooltip>
                 }
               >
@@ -25,12 +25,22 @@ class CompetitiveSites extends React.Component {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span
-                      className="iconify"
-                      data-icon={logo.iconifyClassname}
-                      style={logo.style}
-                      data-inline="false"
-                    ></span>
+                    {logo.iconifyClassname && (
+                      <span
+                        className="iconify"
+                        data-icon={logo.iconifyClassname}
+                        style={logo.style}
+                        data-inline="false"
+                      ></span>
+                    )}
+                    {!logo.iconifyClassname && logo.imageSrc && (
+                      <img
+                        className="skill-image"
+                        style={logo.style}
+                        src={`${process.env.PUBLIC_URL}/educations/${logo.imageSrc}`}
+                        alt={logo.siteName}
+                      />
+                    )}
                   </a>
                 </li>
               </OverlayTrigger>

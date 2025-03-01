@@ -1,17 +1,30 @@
 .dev-icons {
-  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
   list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .competitive-sites-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  font-family: "Google Sans Regular";
+  flex: 1 1 calc(33.33% - 20px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.competitive-sites-inline:nth-child(4),
+.competitive-sites-inline:nth-child(5) {
+  flex: 1 1 calc(50% - 20px);
+}
+
+.competitive-sites-inline img {
+  max-width: 100px;
+  height: auto;
+  display: block;
 }
 
 .competitive-sites-inline > i {
