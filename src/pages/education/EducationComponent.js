@@ -32,7 +32,7 @@ class Education extends Component {
                   Education
                 </h1>
                 <h3 className="heading-sub-text" style={{ color: theme.text }}>
-                  Qualification and Certifcations
+                  Qualification and Certifications
                 </h3>
                 <CompetitiveSites logos={competitiveSites.competitiveSites} />
               </div>

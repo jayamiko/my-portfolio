@@ -27,6 +27,11 @@ export const SocialMediaLink = {
   Whatsapp: "https://wa.me/6281299585762",
 };
 
+export const EducationLink = {
+  Dumbways: "https://dumbways.id/",
+  Unisma: "https://unismabekasi.ac.id/",
+};
+
 //Home Page
 const greeting = {
   title: "Jaya Miko Yoga Pratama",
@@ -283,45 +288,6 @@ const skills = {
         },
       ],
     },
-    // {
-    //   title: "UI/UX Design",
-    //   fileName: "DesignImg",
-    //   skills: [
-    //     "⚡ Designing highly attractive user interface for mobile and web applications",
-    //     "⚡ Customizing logo designs and building logos from scratch",
-    //     "⚡ Creating the flow of application functionalities to optimize user experience",
-    //   ],
-    //   softwareSkills: [
-    //     {
-    //       skillName: "Adobe XD",
-    //       fontAwesomeClassname: "simple-icons:adobexd",
-    //       style: {
-    //         color: "#FF2BC2",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Figma",
-    //       fontAwesomeClassname: "simple-icons:figma",
-    //       style: {
-    //         color: "#F24E1E",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Adobe Illustrator",
-    //       fontAwesomeClassname: "simple-icons:adobeillustrator",
-    //       style: {
-    //         color: "#FF7C00",
-    //       },
-    //     },
-    //     {
-    //       skillName: "Inkscape",
-    //       fontAwesomeClassname: "simple-icons:inkscape",
-    //       style: {
-    //         color: "#000000",
-    //       },
-    //     },
-    //   ],
-    // },
   ],
 };
 
@@ -333,10 +299,28 @@ const competitiveSites = {
       iconifyClassname: null,
       imageSrc: "dumbways-logo.png",
       style: {
-        width: 60,
-        height: 60,
+        width: 70,
+        height: 70,
       },
-      profileLink: "https://dumbways.id/",
+      profileLink: EducationLink.Dumbways,
+    },
+    {
+      siteName: "DQLab Indonesia",
+      imageSrc: "dqlab-logo.webp",
+      style: {
+        width: 100,
+        height: 35,
+      },
+      profileLink: "https://dqlab.id/",
+    },
+    {
+      siteName: "Unisma Bekasi",
+      imageSrc: "unisma.png",
+      style: {
+        width: 70,
+        height: 70,
+      },
+      profileLink: EducationLink.Unisma,
     },
     {
       siteName: "HackerRank",
@@ -349,29 +333,20 @@ const competitiveSites = {
       profileLink: "https://www.hackerrank.com/jayamiko",
     },
     {
-      siteName: "Unisma Bekasi",
-      imageSrc: "unisma.png",
+      siteName: "Google Developer Groups Bogor",
+      imageSrc: "GDG_logo.webp",
       style: {
-        width: 60,
-        height: 60,
-      },
-      profileLink: "https://unismabekasi.ac.id/",
-    },
-    {
-      siteName: "DQLab Indonesia",
-      imageSrc: "dqlab-logo.webp",
-      style: {
-        width: 120,
+        width: 80,
         height: 40,
       },
-      profileLink: "https://dqlab.id/",
+      profileLink: "https://gdg.community.dev/gdg-bogor/",
     },
     {
       siteName: "EFE Indonesia",
       imageSrc: "efe-indonesia.webp",
       style: {
-        width: 200,
-        height: 50,
+        width: 180,
+        height: 40,
       },
       profileLink: "https://efeindonesia.id/",
     },
@@ -381,30 +356,33 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
-      title: "Indian Institute of Information Technology Kurnool",
-      subtitle: "B.Tech. in Computer Engineering",
-      logo_path: "iiitk_logo.png",
-      alt_name: "IIITDM Kurnool",
-      duration: "2016 - 2020",
+      title: "Dumbways Teknologi Indonesia",
+      subtitle: "Fullstack Developer in Computer Engineer",
+      logo_path: "dumbways-logo.png",
+      alt_name: "Dumbways.ID",
+      duration: "2021 - 2022",
       descriptions: [
-        "⚡ I have studied basic software engineering subjects like DS, Algorithms, DBMS, OS, CA, AI etc.",
-        "⚡ Apart from this, I have done courses on Deep Learning, Data Science, Cloud Computing and Full Stack Development.",
-        "⚡ I was selected for Merit cum Means Scholarship which is given to top 10% of students in college. I have received award from respected director for consistently best performance in academics.",
+        "⚡ I was selected for the ISA Scholarship which is given to talented coding students. I have received awards from respected directors for consistently excellent performance during my studies.",
+        "⚡ I have studied basic application development subjects like Algorithms, Computer Architecture, DBMS, OS, Design Pattern, etc.",
+        "⚡ I have mastered many libraries and frameworks in website & Android development using React and Express Js for 2 months",
+        "⚡ Apart from this, I have done pre-class on Full Stack Development using HTML, CSS, Javascript, Node Js end-to-end",
+        "⚡ I was taught how to design database architecture from various relationships",
+        "⚡ I learned public speaking communication to clearly explain the code and structure of each weekly presentation",
       ],
-      website_link: "http://iiitk.ac.in",
+      website_link: EducationLink.Dumbways,
     },
     {
-      title: "Indiana University Bloomington",
-      subtitle: "M.S. in Computer Science",
-      logo_path: "iu_logo.png",
-      alt_name: "Indiana University Bloomington",
-      duration: "2021 - 2023",
+      title: `Universitas Islam "45" Bekasi`,
+      subtitle: "Islamic Education in Islamic Education Faculty",
+      logo_path: "unisma.png",
+      alt_name: "UNISMA Bekasi",
+      duration: "2019 - present",
       descriptions: [
-        "⚡ I have taken varity of courses related to Artificial Intelligence which correspond to Explainable AI, Graph Machine Learning, Computer Vision etc.",
-        "⚡ Apart from this, I have also done research assistantship. As part of it, I have worked on creating new algorithms in Graph ML and Network Science.",
-        "⚡ During my time at university, I was also associated with multimedia department. As part of it, I have worked on some documentry films and interviews.",
+        "⚡ I have taken various courses related to Islamic Education, covering topics such as Contemporary Islamic Thought, Philosophy of Islamic Education, and Technology-Based Learning Methodologies.",
+        "⚡ In addition, I have been involved in academic research, focusing on developing digital-based Islamic learning models and integrating Islamic values into modern education.",
+        "⚡ During my time at university, I was also active in the multimedia department, where I contributed to documentary films and explored themes of Islamic studies, moral education, and social issues.",
       ],
-      website_link: "https://www.indiana.edu/",
+      website_link: EducationLink.Unisma,
     },
   ],
 };
