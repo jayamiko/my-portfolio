@@ -43,7 +43,7 @@ class Header extends Component {
                     to={to}
                     tag={Link}
                     activeStyle={{ fontWeight: "bold" }}
-                    style={{ color: theme.text }}
+                    style={{ color: theme.text, cursor: "pointer" }}
                     // onMouseEnter={(event) =>
                     //   onMouseEnter(event, theme.highlight)
                     // }

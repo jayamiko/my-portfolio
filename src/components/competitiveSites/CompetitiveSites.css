@@ -1,4 +1,4 @@
-.dev-icons {
+.edu-icons {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 kolom */
   grid-template-rows: repeat(2, auto); /* 2 baris */
