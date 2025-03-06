@@ -23,6 +23,8 @@
 
 .experience-heading-text-div {
   text-align: center;
+  padding-left: 44px;
+  padding-right: 44px;
 }
 
 .experience-heading-img-div > * {
@@ -53,6 +55,16 @@
   margin-left: 20px;
   margin-right: 20px;
   font-family: "Google Sans Medium";
+}
+
+.experience-list-card {
+  margin: 50px;
+}
+
+@media (max-width: 768px) {
+  .experience-list-card {
+    margin: 20px;
+  }
 }
 
 @media (max-width: 1380px) {

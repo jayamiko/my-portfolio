@@ -17,8 +17,8 @@ class ExperienceCard extends Component {
           <div className="experience-card-logo-div">
             <img
               className="experience-card-logo"
-              src={require(`../../assets/images/${experience["logo_path"]}`)}
-              alt=""
+              src={`${process.env.PUBLIC_URL}/companies/${experience["logo_path"]}`}
+              alt={experience["title"]}
             />
           </div>
         </Fade>
@@ -45,14 +45,23 @@ class ExperienceCard extends Component {
           )}
         </div>
         <Fade right duration={2000} distance="40px">
-          <div style={{ display: "flex", flexDirection: "row" }}>
+          <div
+            style={{
+              width: "100%",
+              display: "flex",
+              flexDirection: "row",
+            }}
+          >
             <div
               className="arrow-left"
               style={{ borderRight: `10px solid ${theme.body}` }}
             ></div>
             <div
               className="experience-card"
-              style={{ background: `${theme.body}` }}
+              style={{
+                background: `${theme.body}`,
+                width: "100%",
+              }}
             >
               <div
                 style={{
@@ -64,7 +73,7 @@ class ExperienceCard extends Component {
                 <div>
                   <h3
                     className="experience-card-title"
-                    style={{ color: theme.text }}
+                    style={{ color: experience["color"] }}
                   >
                     {experience["title"]}
                   </h3>
