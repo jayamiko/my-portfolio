@@ -15,26 +15,33 @@ class CertificationCard extends Component {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <div className="content-overlay"></div>
+              <div
+                className="content-overlay"
+                style={{
+                  background: `${certificate.color_code}40`,
+                }}
+              ></div>
               <div
                 className="cert-header"
                 style={{ backgroundColor: certificate.color_code }}
               >
                 <img
                   className="logo_img"
-                  src={require(`../../assets/images/${certificate.logo_path}`)}
+                  src={`${process.env.PUBLIC_URL}/certifications/${certificate.logo_path}`}
                   alt={certificate.alt_name}
                 />
               </div>
-              <div className="content-details fadeIn-top">
-                <h3 className="content-title" style={{ color: theme.body }}>
-                  Certificate
-                </h3>
-              </div>
+              <div className="content-details fadeIn-top"></div>
             </a>
           </div>
           <div className="cert-body">
-            <h2 className="cert-body-title" style={{ color: theme.text }}>
+            <h2
+              className="cert-body-title"
+              style={{
+                color: certificate.color_code,
+                textShadow: "0.5px 0.5px 2px rgba(0, 0, 0, 0.5)",
+              }}
+            >
               {certificate.title}
             </h2>
             <h3

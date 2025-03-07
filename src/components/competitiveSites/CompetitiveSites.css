@@ -1,17 +1,19 @@
-.dev-icons {
-  padding-left: 0;
+.edu-icons {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolom */
+  grid-template-rows: repeat(2, auto); /* 2 baris */
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0;
   list-style: none;
-  font-size: 3rem;
-  margin-bottom: 0px;
-  margin-top: 0px;
-  text-align: center;
 }
 
-.competitive-sites-inline {
-  display: inline-block;
-  margin-right: 20px;
-  margin-bottom: 20px;
-  font-family: "Google Sans Regular";
+.competitive-sites-inline img {
+  max-width: 100px;
+  height: auto;
 }
 
 .competitive-sites-inline > i {
