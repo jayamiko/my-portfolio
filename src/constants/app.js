@@ -3,6 +3,6 @@ export const menuItems = [
   { to: "/education", label: "Education" },
   { to: "/experience", label: "Experience" },
   { to: "/projects", label: "Projects" },
-  // { to: "/opensource", label: "Open Source" },
+  { to: "/collaboration", label: "Collaboration" },
   { to: "/contact", label: "Contact Me" },
 ];

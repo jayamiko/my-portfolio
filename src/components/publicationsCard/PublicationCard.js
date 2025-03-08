@@ -38,20 +38,22 @@ export default function PublicationCard({ pub, theme }) {
               {pub.top && (
                 <div className="stat-item">
                   <FaTrophy className="icon" />
-                  <span>Top {pub.top}</span>
+                  <span className="stat-item-text">Top {pub.top}</span>
                 </div>
               )}
               <div className="stat-item">
                 <FaEye className="icon" />
-                <span>{pub.views} Views</span>
+                <span className="stat-item-text">{pub.views} Views</span>
               </div>
               <div className="stat-item">
                 <FaFileAlt className="icon" />
-                <span>{pub.pages} Pages</span>
+                <span className="stat-item-text">{pub.pages} Pages</span>
               </div>
               <div className="stat-item">
                 <FaBookmark className="icon" />
-                <span>{pub.bookmarks} Bookmarks</span>
+                <span className="stat-item-text">
+                  {pub.bookmarks} Bookmarks
+                </span>
               </div>
             </div>
             <div className="publication-details">

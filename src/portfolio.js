@@ -1,5 +1,7 @@
 /* Change this file to get your personal Porfolio */
 
+import { styled } from "baseui";
+
 // Website related settings
 const settings = {
   isSplash: true, // Change this to false if you don't want Splash screen.
@@ -390,11 +392,19 @@ const degrees = {
 const certifications = {
   certifications: [
     {
+      title: "Software Engineer",
+      subtitle: "Hackerrank",
+      logo_path: "software-developer_hackerrank.png",
+      certificate_link: "https://www.hackerrank.com/certificates/85de0ac4f679",
+      alt_name: "Software Engineer Certificate",
+      color_code: "#3c3c3c",
+    },
+    {
       title: "Go Basic",
       subtitle: "Hackerrank",
       logo_path: "go_basic.png",
       certificate_link: "https://www.hackerrank.com/certificates/2f87b8b495f9",
-      alt_name: "Go basic",
+      alt_name: "Go Basic Certificate",
       color_code: "#00ADD8",
     },
     {
@@ -595,11 +605,42 @@ const publications = {
   ],
 };
 
+// Project Page
+export const competitiveBrands = {
+  data: [
+    {
+      brandName: "MyTelkomsel",
+      imageSrc: "mytelkomsel.png",
+      brandLink: "http://my.telkomsel.com",
+    },
+    {
+      brandName: "Bank Syariah Indonesia",
+      imageSrc: "bank-bsi.webp",
+      brandLink: "http://bankbsi.co.id",
+    },
+    {
+      brandName: "Lokapala",
+      imageSrc: "lokapala.webp",
+      brandLink: "http://lokapala.games",
+    },
+    {
+      brandName: "Cakra Association",
+      imageSrc: "cakra.webp",
+      brandLink: "http://cakra.org",
+      style: {
+        width: 150,
+        height: "auto",
+        filter: "drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5))",
+      },
+    },
+  ],
+};
+
 // Contact Page
 const contactPageData = {
   contactSection: {
     title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
+    profile_image_path: "jayamiko_profile.jpg",
     description:
       "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
   },
@@ -612,12 +653,12 @@ const contactPageData = {
   },
   addressSection: {
     title: "Address",
-    subtitle: "Saratoga Ave, San Jose, CA, USA 95129",
-    locality: "San Jose",
-    country: "USA",
-    region: "California",
-    postalCode: "95129",
-    streetAddress: "Saratoga Avenue",
+    subtitle: "Bintaro | South Jakarta | Bekasi Regency",
+    locality: "South Jakarta",
+    country: "Indonesia",
+    region: "Jakarta",
+    postalCode: "17510",
+    streetAddress: "Bekasi Griya Pratama",
     avatar_image_path: "address_image.svg",
     location_map_link: "https://maps.app.goo.gl/NvYZqa34Wye4tpS17",
   },

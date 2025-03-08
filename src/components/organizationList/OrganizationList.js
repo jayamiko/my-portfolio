@@ -1,41 +1,46 @@
-import React, { Component } from "react";
+import React from "react";
 import "./OrganizationList.css";
 import { OverlayTrigger, Tooltip } from "react-bootstrap";
 import { Fade } from "react-reveal";
 
-class OrganizationList extends Component {
-  render() {
-    return (
-      <div className="organizations-main-div">
-        <ul className="dev-icons-orgs">
-          {this.props.logos.map((logo) => {
-            return (
-              <OverlayTrigger
-                key={logo["login"]}
-                placement={"top"}
-                style={{ marginBottom: "5px" }}
-                overlay={
-                  <Tooltip id={`tooltip-top`}>
-                    <strong>{logo["login"]}</strong>
-                  </Tooltip>
-                }
+function OrganizationList(props) {
+  return (
+    <div className="organizations-main-div">
+      <ul className="dev-icons-orgs">
+        {props.logos.map((logo) => {
+          return (
+            <OverlayTrigger
+              key={logo["brandName"]}
+              placement={"top"}
+              style={{ marginBottom: "5px" }}
+              overlay={
+                <Tooltip id={`tooltip-top`}>
+                  <strong>{logo["brandName"]}</strong>
+                </Tooltip>
+              }
+            >
+              <a
+                href={logo.brandLink}
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                <li className="organizations-inline" name={logo["login"]}>
+                <li className="organizations-inline" name={logo["brandName"]}>
                   <Fade bottom duration={2000} distance="40px">
                     <img
                       className="organizations-img"
-                      src={logo["avatarUrl"]}
-                      alt={logo["login"]}
+                      style={logo["style"]}
+                      src={`${process.env.PUBLIC_URL}/brands/${logo["imageSrc"]}`}
+                      alt={logo["brandName"]}
                     />
                   </Fade>
                 </li>
-              </OverlayTrigger>
-            );
-          })}
-        </ul>
-      </div>
-    );
-  }
+              </a>
+            </OverlayTrigger>
+          );
+        })}
+      </ul>
+    </div>
+  );
 }
 
 export default OrganizationList;

@@ -1,4 +1,4 @@
-import React, { Component, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Header from "../../components/header/Header";
 import Footer from "../../components/footer/Footer";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
@@ -11,10 +11,11 @@ import {
   projectsHeader,
   publicationsHeader,
   publications,
+  competitiveBrands,
 } from "../../portfolio.js";
-import ProjectsData from "../../shared/opensource/projects.json";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
+import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const Projects = ({ theme, onToggle }) => {
   const [repos, setRepos] = useState([]);
