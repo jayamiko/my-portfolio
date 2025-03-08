@@ -3,31 +3,27 @@
   list-style: none;
   font-size: 3rem;
   margin-bottom: 0px;
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin: 50px;
   text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .organizations-img {
-  width: 100px;
+  width: 300px;
   height: auto;
+  /* filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.5)); */
 }
 
 .organizations-inline {
   display: inline-block;
   margin-right: 50px;
-  margin-bottom: 50px;
-  /* border: 1px solid #000000; */
   font-family: "Google Sans Regular";
 }
 
 .organizations-inline:hover {
-  -moz-transform: translate(0px, -5px);
-  -ms-transform: translate(0px, -5px);
-  -o-transform: translate(0px, -5px);
-  -webkit-transform: translate(0px, -5px);
-  transform: translate(0px, -5px);
+  cursor: pointer;
 }
 
 @media (max-width: 1380px) {

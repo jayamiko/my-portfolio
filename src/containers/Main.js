@@ -44,7 +44,7 @@ export default class Main extends Component {
             )}
           />
           <Route
-            path="/opensource"
+            path="/collaboration"
             render={(props) => (
               <Opensource {...props} theme={this.props.theme} />
             )}

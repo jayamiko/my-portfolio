@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./Organizations.css";
 import { Fade } from "react-reveal";
 import OrganizationList from "../../components/organizationList/OrganizationList";
-import OrganizationsData from "../../shared/opensource/organizations.json";
+import { competitiveBrands } from "../../portfolio";
 
 class Organizations extends Component {
   render() {
@@ -12,11 +12,11 @@ class Organizations extends Component {
         <div className="organizations-header-div">
           <Fade bottom duration={2000} distance="20px">
             <h1 className="organizations-header" style={{ color: theme.text }}>
-              Contributed Organizations
+              Contributed Development
             </h1>
           </Fade>
         </div>
-        <OrganizationList logos={OrganizationsData["data"]} />
+        <OrganizationList logos={competitiveBrands["data"]} />
       </div>
     );
   }
