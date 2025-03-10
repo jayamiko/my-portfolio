@@ -5,6 +5,8 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
+import { PiReadCvLogoFill } from "react-icons/pi";
+import GradientText from "../../components/text/gradientText/GradientText";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -14,14 +16,19 @@ export default function Greeting(props) {
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
-              <h1 className="greeting-text" style={{ color: theme.text }}>
-                {greeting.title}
-              </h1>
-              {greeting.nickname && (
+              <GradientText
+                animationSpeed={5}
+                showBorder={false}
+                className="greeting-text"
+              >
+                Jaya Miko Yoga Pratama
+              </GradientText>
+
+              {/* {greeting.nickname && (
                 <h2 className="greeting-nickname" style={{ color: theme.text }}>
                   ( {greeting.nickname} )
                 </h2>
-              )}
+              )} */}
               <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
@@ -30,17 +37,19 @@ export default function Greeting(props) {
               </p>
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div">
-                <Button
+                {/* <Button
                   text="⭐ Star Me On Github"
                   newTab={true}
                   href={greeting.portfolio_repository}
                   className="portfolio-repo-btn"
                   theme={theme}
-                />
+                /> */}
                 <Button
-                  text="See my resume"
+                  icon={<PiReadCvLogoFill size={14} />}
+                  text=" See My CV"
                   newTab={true}
                   href={greeting.resumeLink}
+                  className="see-my-cv-btn"
                   theme={theme}
                 />
               </div>
