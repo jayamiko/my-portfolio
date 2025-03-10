@@ -37,7 +37,11 @@ class CompetitiveSites extends React.Component {
                       <img
                         className="skill-image"
                         style={logo.style}
-                        src={`${process.env.PUBLIC_URL}/educations/${logo.imageSrc}`}
+                        src={
+                          logo.externalSrc
+                            ? logo.imageSrc
+                            : `${process.env.PUBLIC_URL}/educations/${logo.imageSrc}`
+                        }
                         alt={logo.siteName}
                       />
                     )}

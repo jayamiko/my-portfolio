@@ -1,7 +1,3 @@
-/* Change this file to get your personal Porfolio */
-
-import { styled } from "baseui";
-
 // Website related settings
 const settings = {
   isSplash: true, // Change this to false if you don't want Splash screen.
@@ -43,7 +39,7 @@ const greeting = {
     Skilled in designing, developing, and maintaining high-performance software. Proficient in JavaScript, Typescript, Go, MySQL and software engineering principles. Experienced in building scalable, user-centric applications and solving complex problems.
   `,
   resumeLink:
-    "https://drive.google.com/file/d/1Sx4dtHSNKDBbZOAdYnl1r4wqn2OPGvmE/view?usp=sharing",
+    "https://drive.google.com/file/d/1qdh1t3sJTkwF_OAHmfYTV2voIAWiwJhj/view?usp=sharing",
   portfolio_repository: `${SocialMediaLink.Github}/Dewe-Tour-Web-Socket.io`,
   githubProfile: SocialMediaLink.Github,
 };
@@ -298,7 +294,6 @@ const competitiveSites = {
   competitiveSites: [
     {
       siteName: "Dumbways",
-      iconifyClassname: null,
       imageSrc: "dumbways-logo.png",
       style: {
         width: 70,
@@ -336,11 +331,8 @@ const competitiveSites = {
     },
     {
       siteName: "Google Developer Groups Bogor",
-      imageSrc: "GDG_logo.webp",
-      style: {
-        width: 80,
-        height: 40,
-      },
+      externalSrc: true,
+      imageSrc: "https://avatars0.githubusercontent.com/u/53558593?v=4",
       profileLink: "https://gdg.community.dev/gdg-bogor/",
     },
     {
