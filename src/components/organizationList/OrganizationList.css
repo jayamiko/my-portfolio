@@ -23,7 +23,7 @@
   cursor: pointer;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 344px) {
   .dev-icons-orgs {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -33,7 +33,7 @@
   }
 }
 
-@media (min-width: 400px) and (max-width: 768px) {
+@media (min-width: 345px) and (max-width: 768px) {
   .dev-icons-orgs {
     grid-template-columns: repeat(2, 1fr);
   }
