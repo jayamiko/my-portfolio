@@ -1,11 +1,9 @@
 .dev-icons-orgs {
   list-style: none;
   font-size: 3rem;
-  padding: 0px 50px;
   text-align: center;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 10px;
   justify-content: center;
   align-items: center;
 }
@@ -25,37 +23,36 @@
   cursor: pointer;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 400px) {
   .dev-icons-orgs {
     grid-template-columns: repeat(1, 1fr);
   }
+
+  .organizations-inline {
+    margin-bottom: 25px;
+  }
 }
 
-@media (max-width: 1380px) {
-}
-
-@media (max-width: 768px) {
+@media (min-width: 400px) and (max-width: 768px) {
   .dev-icons-orgs {
-    grid-template-columns: repeat(2, 1fr); /* 2 kolom untuk layar kecil */
-  }
-
-  .organizations-img {
-    width: 60px;
-  }
-
-  .dev-icons-orgs {
-    margin-left: 20px;
-    margin-right: 20px;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .organizations-inline {
-    margin-right: 30px;
     margin-bottom: 30px;
+  }
+
+  .organizations-img {
+    width: 140px;
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .dev-icons-orgs {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .organizations-img {
+    width: 160px;
   }
 }
