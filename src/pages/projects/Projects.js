@@ -11,11 +11,9 @@ import {
   projectsHeader,
   publicationsHeader,
   publications,
-  competitiveBrands,
 } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
-import { OverlayTrigger, Tooltip } from "react-bootstrap";
 
 const Projects = ({ theme, onToggle }) => {
   const [repos, setRepos] = useState([]);
