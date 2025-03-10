@@ -628,10 +628,30 @@ export const competitiveBrands = {
       imageSrc: "cakra.webp",
       brandLink: "http://cakra.org",
       style: {
-        width: 150,
+        width: 120,
         height: "auto",
         filter: "drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.5))",
       },
+    },
+    {
+      brandName: "Literature",
+      imageSrc: "literature.png",
+      brandLink: "",
+    },
+    {
+      brandName: "Dewe Tour",
+      imageSrc: "dewetour.png",
+      brandLink: "",
+    },
+    {
+      brandName: "Raise Call",
+      imageSrc: "raisecall.png",
+      brandLink: "http://appdev.raisecall.com",
+    },
+    {
+      brandName: "Primasys",
+      imageSrc: "primasys_logo.png",
+      brandLink: "https://www.primasys.co.id/",
     },
   ],
 };
