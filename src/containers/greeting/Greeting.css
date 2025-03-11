@@ -2,22 +2,31 @@
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 4rem;
 }
+
 .greet-main {
   width: 90%;
+  min-height: 85vh;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .greeting-main {
   display: flex;
+  height: fit-content;
+  align-items: center;
 }
 
 .greeting-main > * {
   flex: 1;
-  margin-bottom: 30px;
+}
+
+.greeting-text-div {
+  gap: 100px;
+  height: fit-content;
 }
 
 .greeting-text {
@@ -87,6 +96,8 @@
     justify-content: center;
     align-items: center;
     text-align: center;
+    gap: 4px;
+    margin-top: 20px;
   }
   .portfolio-repo-btn-div span {
     font-size: 14px;
@@ -99,9 +110,10 @@
 @media (min-width: 430px) and (max-width: 768px) {
   .greeting-main {
     display: flex;
-  }
-  .greeting-main > * {
-    flex: 1;
+    flex-direction: column-reverse;
+    gap: 20px;
+    height: fit-content;
+    align-items: center;
   }
   .greeting-image-div > * {
     max-width: 100%;
@@ -110,16 +122,11 @@
   .greeting-text {
     margin-top: 10px;
     font-size: 56px;
-    text-align: center;
+    text-align: left;
   }
   .greeting-nickname {
     text-align: left;
     font-size: 16px;
-  }
-  .greeting-text {
-    font-size: 30px;
-    margin-top: 0px;
-    text-align: left;
   }
   .greeting-nickname {
     font-size: 25px;
@@ -134,17 +141,37 @@
   .portfolio-repo-btn-div {
     width: 100%;
     display: flex;
-    justify-content: start;
-    gap: 2px;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 20px;
   }
 }
 
 /* Media Query */
 @media (min-width: 769px) and (max-width: 1380px) {
+  .greeting-main {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+    height: fit-content;
+    align-items: center;
+  }
   .greeting-text {
+    text-align: center;
     font-size: 36px;
   }
+  .greeting-nickname {
+    text-align: center;
+  }
   .greeting-text-p {
+    text-align: center;
     font-size: 12px;
+  }
+  .portfolio-repo-btn-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+    margin-top: 20px;
   }
 }

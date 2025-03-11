@@ -117,7 +117,7 @@
   .social-media-div {
     text-align: center;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     gap: 2px;
   }
   .icon-button i {

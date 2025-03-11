@@ -32,6 +32,7 @@ export default function Greeting(props) {
               >
                 {greeting.subTitle}
               </p>
+              <br />
               <SocialMedia theme={theme} />
               <div className="portfolio-repo-btn-div">
                 <GradientButton
