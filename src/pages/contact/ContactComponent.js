@@ -6,14 +6,18 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { greeting, contactPageData } from "../../portfolio.js";
-import Address from "../../containers/address/Address.jsx";
+import { greeting, contactPageData, SocialMediaLink } from "../../portfolio.js";
+import { PiReadCvLogoFill } from "react-icons/pi";
+import GradientButton from "../../components/gradientButton/GradientButton.jsx";
+import GradientText from "../../components/text/gradientText/GradientText.jsx";
+import { RiMailSendLine } from "react-icons/ri";
+// import Address from "../../containers/address/Address.jsx";
 // import Blog from "../../containers/blog/Blog.jsx";
 
 const ContactData = contactPageData.contactSection;
 // const blogSection = contactPageData.blogSection;
-const addressSection = contactPageData.addressSection;
-const phoneSection = contactPageData.phoneSection;
+// const addressSection = contactPageData.addressSection;
+// const phoneSection = contactPageData.phoneSection;
 
 class Contact extends Component {
   render() {
@@ -24,7 +28,6 @@ class Contact extends Component {
         <div
           className="basic-contact"
           style={{
-            minHeight: "80vh",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
@@ -53,10 +56,22 @@ class Contact extends Component {
                 </p>
                 <SocialMedia theme={theme} />
                 <div className="resume-btn-div">
+                  <GradientButton
+                    onClick={() => {
+                      window.location.href = `mailto:${SocialMediaLink.Email}`;
+                    }}
+                  >
+                    <GradientText animationSpeed={5}>
+                      <RiMailSendLine size={16} color="#05505E" />
+                      <span> Sent Mail to Me</span>
+                    </GradientText>
+                  </GradientButton>
                   <Button
-                    text="See My Resume"
+                    icon={<PiReadCvLogoFill size={14} />}
+                    text=" See My CV"
                     newTab={true}
                     href={greeting.resumeLink}
+                    // className="see-my-cv-btn"
                     theme={theme}
                   />
                 </div>

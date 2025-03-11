@@ -1,4 +1,12 @@
+.organizations-main-div {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .dev-icons-orgs {
+  width: 90%;
   list-style: none;
   font-size: 3rem;
   text-align: center;
@@ -6,6 +14,9 @@
   grid-template-columns: repeat(4, 1fr);
   justify-content: center;
   align-items: center;
+  margin: 0px !important;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .organizations-img {
@@ -27,19 +38,11 @@
   .dev-icons-orgs {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  .organizations-inline {
-    margin-bottom: 25px;
-  }
 }
 
 @media (min-width: 345px) and (max-width: 768px) {
   .dev-icons-orgs {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  .organizations-inline {
-    margin-bottom: 30px;
   }
 
   .organizations-img {
