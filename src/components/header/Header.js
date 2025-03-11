@@ -25,7 +25,7 @@ const Header = ({ theme }) => {
     if (windowWidth < 1024 && isMenuOpen) {
       setIsMenuOpen(false);
     }
-  }, [windowWidth, isMenuOpen]);
+  }, [windowWidth]);
 
   const handleMenuToggle = () => {
     setIsMenuOpen(!isMenuOpen);

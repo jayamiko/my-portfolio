@@ -19,7 +19,7 @@ export const SocialMediaLink = {
   Github: "https://github.com/jayamiko",
   Linkedin: "https://www.linkedin.com/in/jayamiko/",
   Youtube: "https://www.youtube.com/@_mjaya10",
-  Email: "jayamiko4@gmail.com",
+  Email: "developer@jayamiko.tech",
   Instagram: "https://www.instagram.com/jayamikoyp/",
   Threads: "https://www.threads.net/@jayamikoyp",
   Whatsapp: "https://wa.me/6281299585762",
