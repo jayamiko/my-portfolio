@@ -11,6 +11,7 @@ import "./Experience.css";
 import { experience } from "../../portfolio.js";
 import { Fade } from "react-reveal";
 import ExperienceImg from "./ExperienceImg";
+import GradientText from "../../components/text/gradientText/GradientText.jsx";
 class Experience extends Component {
   render() {
     const theme = this.props.theme;
@@ -34,12 +35,12 @@ class Experience extends Component {
                 >
                   {experience.title}
                 </h1>
-                <h3
+                <GradientText
+                  animationSpeed={8}
                   className="experience-heading-sub-text"
-                  style={{ color: theme.text }}
                 >
                   {experience["subtitle"]}
-                </h3>
+                </GradientText>
                 <p
                   className="experience-header-detail-text subTitle"
                   style={{ color: theme.secondaryText }}
