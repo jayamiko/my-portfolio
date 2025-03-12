@@ -9,12 +9,21 @@ import { PiReadCvLogoFill } from "react-icons/pi";
 import GradientText from "../../components/text/gradientText/GradientText";
 import GradientButton from "../../components/gradientButton/GradientButton";
 import { RiMailSendLine } from "react-icons/ri";
+import bgImage from "../../assets/personal/1.jpeg";
 
 export default function Greeting(props) {
   const theme = props.theme;
   return (
     <Fade bottom duration={2000} distance="40px">
-      <div className="greet-main" id="greeting">
+      <div
+        className="greet-main"
+        id="greeting"
+        style={{
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(${bgImage})`,
+          backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+        }}
+      >
         <div className="greeting-main">
           <div className="greeting-text-div">
             <div>
