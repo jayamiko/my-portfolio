@@ -5,13 +5,17 @@
 }
 
 .greet-main {
-  width: 90%;
+  width: 100%;
+  padding-left: 5%;
+  padding-right: 5%;
   min-height: 80vh;
   padding: 20px 10px;
   margin: 0px auto;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  background-position: 80% 15%;
 }
 
 .greeting-main {
@@ -69,6 +73,9 @@
 }
 
 @media (max-width: 430px) {
+  .greet-main {
+    background-position: center;
+  }
   .greeting-text {
     margin-top: 10px;
     font-size: 42px;
@@ -108,6 +115,9 @@
 }
 
 @media (min-width: 430px) and (max-width: 768px) {
+  .greet-main {
+    background-position: center;
+  }
   .greeting-main {
     display: flex;
     flex-direction: column-reverse;
