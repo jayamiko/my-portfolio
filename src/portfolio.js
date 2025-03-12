@@ -534,7 +534,7 @@ const experience = {
           company_url: "https://www.linkedin.com/company/freecopy/about/",
           logo_path: "transmart.png",
           duration: "January 2018 - Juni 2018",
-          location: "Bekasi City, East Java",
+          location: "Bekasi City, West Java",
           description: `
             Manage stock and print product price updates based on ongoing promotions. Handle product stock checks, promotions, and customer engagement.
           `,
