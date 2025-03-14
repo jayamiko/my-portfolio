@@ -139,6 +139,9 @@
   .header .menu {
     max-height: none;
   }
+  .header .menu-icon {
+    display: none;
+  }
   .header .logo-name {
     padding: 0 5px;
   }
