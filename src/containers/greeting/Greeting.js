@@ -4,12 +4,11 @@ import SocialMedia from "../../components/socialMedia/SocialMedia";
 import Button from "../../components/button/Button";
 import { greeting, SocialMediaLink } from "../../portfolio";
 import { Fade } from "react-reveal";
-import FeelingProud from "./FeelingProud";
 import { PiReadCvLogoFill } from "react-icons/pi";
 import GradientText from "../../components/text/gradientText/GradientText";
 import GradientButton from "../../components/gradientButton/GradientButton";
 import { RiMailSendLine } from "react-icons/ri";
-import bgImage from "../../assets/personal/1.jpeg";
+import bgImage from "../../assets/personal/cover_jayamiko.jpg";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -65,13 +64,9 @@ export default function Greeting(props) {
               </div>
             </div>
           </div>
-          <div className="greeting-image-div">
-            {/* <img
-							alt="saad sitting on table"
-							src={require("../../assets/images/feelingProud.svg")}
-						></img> */}
+          {/* <div className="greeting-image-div">
             <FeelingProud theme={theme} />
-          </div>
+          </div> */}
         </div>
       </div>
     </Fade>

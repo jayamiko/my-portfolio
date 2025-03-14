@@ -21,8 +21,10 @@ const Header = ({ theme }) => {
     return () => window.removeEventListener("resize", handleResize);
   }, []);
 
+  const widthLess1024 = windowWidth < 1024;
+
   useEffect(() => {
-    if (windowWidth < 1024 && isMenuOpen) {
+    if (widthLess1024 && isMenuOpen) {
       setIsMenuOpen(false);
     }
   }, [windowWidth]);
@@ -50,27 +52,31 @@ const Header = ({ theme }) => {
             checked={isMenuOpen}
             onChange={handleMenuToggle}
           />
-          <label className="menu-icon" htmlFor="menu-btn">
-            <span className="navicon"></span>
-          </label>
+          {widthLess1024 && (
+            <label className="menu-icon" htmlFor="menu-btn">
+              <span className="navicon"></span>
+            </label>
+          )}
 
-          <ul
-            className={`menu ${isMenuOpen ? "menu-open" : ""}`}
-            style={{ backgroundColor: theme.body }}
-          >
-            {menuItems.map(({ to, label }) => (
-              <li key={to}>
-                <NavLink
-                  to={to}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text, cursor: "pointer" }}
-                  onMouseOut={onMouseOut}
-                >
-                  {label}
-                </NavLink>
-              </li>
-            ))}
-          </ul>
+          {(isMenuOpen || !widthLess1024) && (
+            <ul
+              className={`menu ${isMenuOpen ? "menu-open" : ""}`}
+              style={{ backgroundColor: theme.body }}
+            >
+              {menuItems.map(({ to, label }) => (
+                <li key={to}>
+                  <NavLink
+                    to={to}
+                    activeStyle={{ fontWeight: "bold" }}
+                    style={{ color: theme.text, cursor: "pointer" }}
+                    onMouseOut={onMouseOut}
+                  >
+                    {label}
+                  </NavLink>
+                </li>
+              ))}
+            </ul>
+          )}
         </header>
       </div>
     </Fade>
