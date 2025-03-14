@@ -52,31 +52,27 @@ const Header = ({ theme }) => {
             checked={isMenuOpen}
             onChange={handleMenuToggle}
           />
-          {widthLess1024 && (
-            <label className="menu-icon" htmlFor="menu-btn">
-              <span className="navicon"></span>
-            </label>
-          )}
+          <label className="menu-icon" htmlFor="menu-btn">
+            <span className="navicon"></span>
+          </label>
 
-          {(isMenuOpen || !widthLess1024) && (
-            <ul
-              className={`menu ${isMenuOpen ? "menu-open" : ""}`}
-              style={{ backgroundColor: theme.body }}
-            >
-              {menuItems.map(({ to, label }) => (
-                <li key={to}>
-                  <NavLink
-                    to={to}
-                    activeStyle={{ fontWeight: "bold" }}
-                    style={{ color: theme.text, cursor: "pointer" }}
-                    onMouseOut={onMouseOut}
-                  >
-                    {label}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          )}
+          <ul
+            className={`menu ${isMenuOpen ? "menu-open" : ""}`}
+            style={{ backgroundColor: theme.body }}
+          >
+            {menuItems.map(({ to, label }) => (
+              <li key={to}>
+                <NavLink
+                  to={to}
+                  activeStyle={{ fontWeight: "bold" }}
+                  style={{ color: theme.text, cursor: "pointer" }}
+                  onMouseOut={onMouseOut}
+                >
+                  {label}
+                </NavLink>
+              </li>
+            ))}
+          </ul>
         </header>
       </div>
     </Fade>
