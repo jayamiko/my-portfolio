@@ -8,17 +8,17 @@
   width: 100%;
   padding-left: 5%;
   padding-right: 5%;
-  min-height: 80vh;
-  padding: 20px 10px;
+  min-height: 90vh;
+  padding: 20px 5%;
   margin: 0px auto;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-
-  background-position: 80% 15%;
+  background-position: 80% 90%;
 }
 
 .greeting-main {
+  width: 50%;
   display: flex;
   height: fit-content;
   align-items: center;
@@ -51,6 +51,7 @@
   line-height: 28px;
   margin-right: 40px;
   font-family: "Google Sans Medium";
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
 }
 
 .greeting-image-div > * {
@@ -74,7 +75,15 @@
 
 @media (max-width: 430px) {
   .greet-main {
-    background-position: center;
+    height: 100vh;
+    padding-bottom: 25%;
+    background-position: 80%;
+    align-items: end;
+  }
+  .greeting-main {
+    width: 100%;
+    display: inline;
+    margin-bottom: 0px;
   }
   .greeting-text {
     margin-top: 10px;
@@ -87,10 +96,6 @@
   }
   .greeting-image-div {
     display: none;
-  }
-  .greeting-main {
-    display: inline;
-    margin-bottom: 0px;
   }
   .greeting-text-p {
     font-size: 12px;
@@ -116,23 +121,27 @@
 
 @media (min-width: 430px) and (max-width: 768px) {
   .greet-main {
-    background-position: center;
+    background-position: right;
+    align-items: end;
+    padding-bottom: 10%;
   }
   .greeting-main {
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
     height: fit-content;
     align-items: center;
+    padding-left: 5%;
+    padding-right: 5%;
   }
   .greeting-image-div > * {
     max-width: 100%;
     height: auto;
   }
   .greeting-text {
-    margin-top: 10px;
-    font-size: 56px;
-    text-align: left;
+    font-size: 42px;
+    text-align: center;
   }
   .greeting-nickname {
     text-align: left;
@@ -143,10 +152,10 @@
     text-align: left;
   }
   .greeting-text-p {
-    font-size: 12px;
+    font-size: 14px;
     margin-right: 0px;
     line-height: normal;
-    text-align: left;
+    text-align: center;
   }
   .portfolio-repo-btn-div {
     width: 100%;
@@ -159,7 +168,13 @@
 
 /* Media Query */
 @media (min-width: 769px) and (max-width: 1380px) {
+  .greet-main {
+    background-position: right;
+    padding-bottom: 25%;
+    align-items: end;
+  }
   .greeting-main {
+    width: 100%;
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
@@ -174,8 +189,9 @@
     text-align: center;
   }
   .greeting-text-p {
+    margin-right: 0px;
     text-align: center;
-    font-size: 12px;
+    font-size: 16px;
   }
   .portfolio-repo-btn-div {
     width: 100%;
