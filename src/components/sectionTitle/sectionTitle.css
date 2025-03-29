@@ -1,0 +1,24 @@
+.basic-projects {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.publications-heading-text-div {
+  text-align: center;
+  font-family: "Google Sans Regular";
+  margin-top: 70px;
+}
+
+.publications-heading-text {
+  font-size: 56px;
+  font-weight: 600;
+}
+
+.projects-header-detail-text {
+  font-size: 20px;
+  line-height: 30px;
+  margin-top: 0px;
+  margin-left: 20px;
+  margin-right: 20px;
+  font-family: "Google Sans Medium";
+}

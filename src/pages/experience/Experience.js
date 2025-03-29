@@ -8,10 +8,12 @@ import ExperienceCard from "../../components/experienceCard/ExperienceCard.js";
 import { Panel } from "baseui/accordion";
 
 import "./Experience.css";
-import { experience } from "../../portfolio.js";
+import { experience, SocialMediaLink } from "../../portfolio.js";
 import { Fade } from "react-reveal";
 import ExperienceImg from "./ExperienceImg";
 import GradientText from "../../components/text/gradientText/GradientText.jsx";
+import GradientButton from "../../components/gradientButton/GradientButton";
+import { RiMailSendLine } from "react-icons/ri";
 class Experience extends Component {
   render() {
     const theme = this.props.theme;
@@ -47,6 +49,16 @@ class Experience extends Component {
                 >
                   {experience["description"]}
                 </p>
+                <GradientButton
+                  onClick={() => {
+                    window.location.href = `mailto:${SocialMediaLink.Email}`;
+                  }}
+                >
+                  <GradientText animationSpeed={5}>
+                    <RiMailSendLine size={16} color="#05505E" />
+                    <span> Hire Me Now!</span>
+                  </GradientText>
+                </GradientButton>
               </div>
             </div>
           </Fade>
