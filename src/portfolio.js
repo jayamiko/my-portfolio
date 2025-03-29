@@ -179,6 +179,27 @@ const skills = {
           },
         },
         {
+          skillName: "PHP",
+          fontAwesomeClassname: "simple-icons:php",
+          style: {
+            color: "indigo",
+          },
+        },
+        {
+          skillName: "Laravel",
+          fontAwesomeClassname: "simple-icons:laravel",
+          style: {
+            color: "red",
+          },
+        },
+        {
+          skillName: "GraphQL",
+          fontAwesomeClassname: "simple-icons:graphql",
+          style: {
+            color: "pink",
+          },
+        },
+        {
           skillName: "Redux",
           fontAwesomeClassname: "simple-icons:redux",
           style: {
@@ -577,8 +598,7 @@ const publications = {
       name: "Kebudayaan Islam Sepanjang Masa",
       createdAt: "2022",
       description: "Paper published in Academia and Scribd",
-      url:
-        "https://www.academia.edu/71684787/KEBUDAYAAN_ISLAM_SEPANJANG_MASA",
+      url: "https://www.academia.edu/71684787/KEBUDAYAAN_ISLAM_SEPANJANG_MASA",
       top: "0.5%",
       views: 14.443,
       pages: 318,
@@ -683,7 +703,7 @@ const contactPageData = {
     title: "Contact Me",
     profile_image_path: "jayamiko_profile.jpg",
     description:
-      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with ML, AI, React, Android, Cloud and Opensource Development.",
+      "I am available on almost every social media. You can message me, I will reply within 24 hours. I can help you with Web or Mobile Developement, Databases, Data Science, AI, Android/iOS, Cloud and Opensource Development.",
   },
   blogSection: {
     title: "Blogs",
