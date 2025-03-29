@@ -179,6 +179,27 @@ const skills = {
           },
         },
         {
+          skillName: "PHP",
+          fontAwesomeClassname: "simple-icons:php",
+          style: {
+            color: "indigo",
+          },
+        },
+        {
+          skillName: "Laravel",
+          fontAwesomeClassname: "simple-icons:laravel",
+          style: {
+            color: "red",
+          },
+        },
+        {
+          skillName: "GraphQL",
+          fontAwesomeClassname: "simple-icons:graphql",
+          style: {
+            color: "pink",
+          },
+        },
+        {
           skillName: "Redux",
           fontAwesomeClassname: "simple-icons:redux",
           style: {
