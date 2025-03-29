@@ -25,7 +25,7 @@ export default function Greeting(props) {
       >
         <div className="greeting-main">
           <div className="greeting-text-div">
-            <div>
+            <div className="greeting-div">
               <GradientText animationSpeed={5} className="greeting-text">
                 Jaya Miko Yoga Pratama
               </GradientText>

@@ -14,6 +14,7 @@ import {
 } from "../../portfolio.js";
 import "./Projects.css";
 import ProjectsImg from "./ProjectsImg";
+import SectionTitle from "../../components/sectionTitle/sectionTitle";
 
 const Projects = ({ theme, onToggle }) => {
   const [repos, setRepos] = useState([]);
@@ -80,27 +81,14 @@ const Projects = ({ theme, onToggle }) => {
 
       {/* Publications Section */}
       {publications.data.length > 0 && (
-        <div className="basic-projects">
-          <Fade bottom duration={2000} distance="40px">
-            <div className="publications-heading-div">
-              <div className="publications-heading-text-div">
-                <h1
-                  className="publications-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {publicationsHeader.title}
-                </h1>
-                <p
-                  className="projects-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {publicationsHeader.description}
-                </p>
-              </div>
-            </div>
-          </Fade>
-        </div>
+        <SectionTitle
+          title={publicationsHeader.title}
+          description={publicationsHeader.description}
+          data={publications.data}
+          theme={theme}
+        />
       )}
+
 
       {/* Publications Cards */}
       <div className="repo-cards-div-main">
@@ -109,28 +97,14 @@ const Projects = ({ theme, onToggle }) => {
         ))}
       </div>
 
-      {/* Publications Section */}
+      {/* Project Section */}
       {repos?.length > 0 && (
-        <div className="basic-projects">
-          <Fade bottom duration={2000} distance="40px">
-            <div className="publications-heading-div">
-              <div className="publications-heading-text-div">
-                <h1
-                  className="publications-heading-text"
-                  style={{ color: theme.text }}
-                >
-                  {projectsHeader.title}
-                </h1>
-                <p
-                  className="projects-header-detail-text subTitle"
-                  style={{ color: theme.secondaryText }}
-                >
-                  {projectsHeader.description}
-                </p>
-              </div>
-            </div>
-          </Fade>
-        </div>
+        <SectionTitle
+          title={projectsHeader.title}
+          description={projectsHeader.description}
+          data={repos}
+          theme={theme}
+        />
       )}
 
       {/* GitHub Repo Cards */}

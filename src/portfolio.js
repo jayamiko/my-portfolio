@@ -470,20 +470,31 @@ const experience = {
       work: true,
       experiences: [
         {
+          title: "Fullstack Web Developer",
+          company: "PT. Ruang Hening Indonesia",
+          company_url: "https://www.ruanghening.com/",
+          logo_path: "hening.png",
+          duration: "14 April 2025 - Present",
+          location: "Central Jakarta, Jakarta",
+          description:
+            "Create a website from scratch as well as a mobile application, which aims to make it easier for users to reach it with web-based applications and PWA",
+          color: "#000000",
+        },
+        {
           title: "Backend Developer",
-          company: "PT. Prosigma Mandiri",
-          company_url: "https://www.tiktok.com/en/",
+          company: "PT. Prosigmaka Mandiri",
+          company_url: "https://prosigmaka.com/",
           logo_path: "prosigma.jpeg",
           duration: "13 March 2025 - Present",
           location: "Bintaro, Tangerang",
           description:
-            "I am working on the backend side using Go language. The projects are from Prima System Integrated (Primasys) as the client.",
+            "I am working on the backend side using Go language. The projects are from Xapiens Teknologi Indonesia as client's Primasys. where the project is to build a logistics application such as coal delivery on truck loads. This application is available both website-based and mobile app",
           color: "#000000",
         },
         {
           title: "Software Engineer",
           company: "PT. Phincon",
-          company_url: "https://legatohealthtech.com/",
+          company_url: "https://phincon.com/",
           logo_path: "phincon.png",
           duration: "12 September 2024 - 11 March 2025",
           location: "South Jakarta, Jakarta",
@@ -495,7 +506,7 @@ const experience = {
         {
           title: "Web Programmer",
           company: "Anantarupa Studios",
-          company_url: "https://www.linkedin.com/company/muffito-inc/about/",
+          company_url: "https://anantarupa.com/",
           logo_path: "anantarupa.jpeg",
           duration: "21 March 2022 - 21 August 2024",
           location: "West Jakarta, Jakarta",
@@ -507,7 +518,7 @@ const experience = {
         {
           title: "Merchandiser",
           company: "PT. Viva Teknik Mandiri",
-          company_url: "https://www.linkedin.com/company/freecopy/about/",
+          company_url: "https://www.kenmaster.co.id/",
           logo_path: "kenmaster.png",
           duration: "January 2020 - Mei 2021",
           location: "South Jakarta, Jakarta",
@@ -519,7 +530,7 @@ const experience = {
         {
           title: "Sales Promotion Boy (SPB)",
           company: "Gold Furniture",
-          company_url: "https://www.linkedin.com/company/freecopy/about/",
+          company_url: "",
           logo_path: "company-default.png",
           duration: "August 2018 - August 2019",
           location: "South Tangerang, Tangerang",
@@ -531,7 +542,7 @@ const experience = {
         {
           title: "Stock Controller Intern",
           company: "Transmart Carefour",
-          company_url: "https://www.linkedin.com/company/freecopy/about/",
+          company_url: "https://transmart.co.id/",
           logo_path: "transmart.png",
           duration: "January 2018 - Juni 2018",
           location: "Bekasi City, West Java",
@@ -567,9 +578,9 @@ const publications = {
       createdAt: "2022",
       description: "Paper published in Academia and Scribd",
       url:
-        "https://www.scribd.com/document/771102230/Kebudayaan-Islam-Sepanjang-Masa",
-      top: "1%",
-      views: 13.982,
+        "https://www.academia.edu/71684787/KEBUDAYAAN_ISLAM_SEPANJANG_MASA",
+      top: "0.5%",
+      views: 14.443,
       pages: 318,
       bookmarks: 63,
     },
@@ -580,7 +591,7 @@ const publications = {
       description: "Paper published in Academia",
       url:
         "https://www.academia.edu/67956906/Sikap_Tawakkal_pada_Kitab_Talim_Mutaalim_Pasal_7",
-      views: 425,
+      views: 452,
       pages: 8,
       bookmarks: 19,
     },
@@ -590,7 +601,7 @@ const publications = {
       createdAt: "2022",
       description: "Paper published in Academia",
       url: "https://www.academia.edu/67858649/PASAL_5_TA_LIM_MUTA_ALIM/",
-      views: 957,
+      views: 961,
       pages: 7,
       bookmarks: 31,
     },
@@ -609,6 +620,24 @@ export const competitiveBrands = {
       brandName: "Bank Syariah Indonesia",
       imageSrc: "bank-bsi.webp",
       brandLink: "http://bankbsi.co.id",
+    },
+    {
+      brandName: "Halodoc",
+      imageSrc: "halodoc.png",
+      brandLink: "https://www.halodoc.com/",
+    },
+    {
+      brandName: "Xapiens",
+      imageSrc: "xapiens.png",
+      brandLink: "https://xapiens.id/id/",
+    },
+    {
+      brandName: "Hening",
+      imageSrc: "hening.png",
+      brandLink: "https://www.ruanghening.com/",
+      style: {
+        width: 120,
+      },
     },
     {
       brandName: "Lokapala",

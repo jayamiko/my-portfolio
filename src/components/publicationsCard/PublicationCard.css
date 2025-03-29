@@ -79,15 +79,15 @@
   color: #000;
 }
 
-@media (max-width: 1200px) {
+@media (min-width: 767px) and (max-width: 1200px) {
   .publication-card-div {
     flex: 1 1 40%;
   }
   .stat-item-text {
-    font-size: 14px;
+    font-size: 11px;
   }
   .icon {
-    font-size: 14px;
+    font-size: 11px;
   }
 }
 
@@ -119,5 +119,17 @@
 
   .icon {
     font-size: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .publication-description {
+    font-size: 14px;
+  }
+  .stat-item-text {
+    font-size: 12px;
+  }
+  .icon {
+    font-size: 12px;
   }
 }
