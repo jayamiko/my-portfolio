@@ -492,18 +492,18 @@ const experience = {
       experiences: [
         {
           title: "Fullstack Web Developer",
-          company: "PT. Ruang Hening Indonesia",
-          company_url: "https://www.ruanghening.com/",
-          logo_path: "hening.png",
-          duration: "14 April 2025 - Present",
+          company: "PT. Qomunal Media Pratama",
+          company_url: "https://www.qomunal.com/",
+          logo_path: "qomunal.png",
+          duration: "11 April 2025 - Present",
           location: "Central Jakarta, Jakarta",
           description:
-            "Create a website from scratch as well as a mobile application, which aims to make it easier for users to reach it with web-based applications and PWA",
+            "Create a website from scratch as well as a mobile application, which aims to make it easier for users to reach it with web-based applications and PWA. Some of the applications that I handle are Qomunal, Toko Wibu and Hening mobile app and website app",
           color: "#000000",
         },
         {
           title: "Backend Developer",
-          company: "PT. Prosigmaka Mandiri",
+          company: "PT. Pro Sigmaka Mandiri",
           company_url: "https://prosigmaka.com/",
           logo_path: "prosigma.jpeg",
           duration: "13 March 2025 - Present",
@@ -642,27 +642,38 @@ export const competitiveBrands = {
       brandLink: "http://bankbsi.co.id",
     },
     {
-      brandName: "Halodoc",
-      imageSrc: "halodoc.png",
-      brandLink: "https://www.halodoc.com/",
-    },
-    {
-      brandName: "Xapiens",
-      imageSrc: "xapiens.png",
-      brandLink: "https://xapiens.id/id/",
+      brandName: "Qomunal",
+      imageSrc: "qomunal.png",
+      brandLink: "https://www.qomunal.com/",
+      style: {
+        width: 125,
+      },
     },
     {
       brandName: "Hening",
       imageSrc: "hening.png",
       brandLink: "https://www.ruanghening.com/",
       style: {
-        width: 120,
+        width: 150,
+      },
+    },
+    {
+      brandName: "Toko Wibu",
+      imageSrc: "toko_wibu.png",
+      brandLink: "https://www.tokowibu.id/",
+      style: {
+        width: 200,
       },
     },
     {
       brandName: "Lokapala",
       imageSrc: "lokapala.webp",
       brandLink: "http://lokapala.games",
+    },
+    {
+      brandName: "Ucoal",
+      imageSrc: "ucoal.png",
+      brandLink: "https://xapiens.id/id/",
     },
     {
       brandName: "Cakra Association",
