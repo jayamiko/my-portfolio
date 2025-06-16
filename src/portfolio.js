@@ -39,7 +39,7 @@ const greeting = {
     Skilled in designing, developing, and maintaining high-performance software. Proficient in JavaScript, Typescript, Go, MySQL and software engineering principles. Experienced in building scalable, user-centric applications and solving complex problems.
   `,
   resumeLink:
-    "https://drive.google.com/file/d/1qdh1t3sJTkwF_OAHmfYTV2voIAWiwJhj/view?usp=sharing",
+    "https://drive.google.com/file/d/1FVfAApYDoLSBUrJoftWdHh_h27NW5p6D/view?usp=sharing",
   portfolio_repository: `${SocialMediaLink.Github}/Dewe-Tour-Web-Socket.io`,
   githubProfile: SocialMediaLink.Github,
 };
@@ -491,22 +491,11 @@ const experience = {
       work: true,
       experiences: [
         {
-          title: "Fullstack Web Developer",
-          company: "PT. Qomunal Media Pratama",
-          company_url: "https://www.qomunal.com/",
-          logo_path: "qomunal.png",
-          duration: "11 April 2025 - Present",
-          location: "Central Jakarta, Jakarta",
-          description:
-            "Create a website from scratch as well as a mobile application, which aims to make it easier for users to reach it with web-based applications and PWA. Some of the applications that I handle are Qomunal, Toko Wibu and Hening mobile app and website app",
-          color: "#000000",
-        },
-        {
           title: "Backend Developer",
           company: "PT. Pro Sigmaka Mandiri",
           company_url: "https://prosigmaka.com/",
           logo_path: "prosigma.jpeg",
-          duration: "13 March 2025 - Present",
+          duration: "13 March 2025 - 19 June 2025",
           location: "Bintaro, Tangerang",
           description:
             "I am working on the backend side using Go language. The projects are from Xapiens Teknologi Indonesia as client's Primasys. where the project is to build a logistics application such as coal delivery on truck loads. This application is available both website-based and mobile app",
@@ -640,22 +629,6 @@ export const competitiveBrands = {
       brandName: "Bank Syariah Indonesia",
       imageSrc: "bank-bsi.webp",
       brandLink: "http://bankbsi.co.id",
-    },
-    {
-      brandName: "Qomunal",
-      imageSrc: "qomunal.png",
-      brandLink: "https://www.qomunal.com/",
-      style: {
-        width: 125,
-      },
-    },
-    {
-      brandName: "Hening",
-      imageSrc: "hening.png",
-      brandLink: "https://www.ruanghening.com/",
-      style: {
-        width: 150,
-      },
     },
     {
       brandName: "Toko Wibu",
