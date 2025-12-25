@@ -36,7 +36,7 @@ const greeting = {
   logo_name: "Jaya Miko Yoga Pratama",
   nickname: "jayamikoyp",
   subTitle: `
-    Skilled in designing, developing, and maintaining high-performance software. Proficient in JavaScript, Typescript, Go, MySQL and software engineering principles. Experienced in building scalable, user-centric applications and solving complex problems.
+  Software engineer with a proven track record of designing, developing, and optimizing high-performance, scalable applications. Strong expertise in JavaScript, TypeScript, Go, and SQL, with hands-on experience building robust backend services, responsive frontends, and efficient data-driven systems. Passionate about delivering user-centric solutions and solving complex technical challenges with clean, maintainable code.
   `,
   resumeLink:
     "https://drive.google.com/file/d/1FVfAApYDoLSBUrJoftWdHh_h27NW5p6D/view?usp=sharing",
@@ -391,7 +391,7 @@ const degrees = {
       subtitle: "Islamic Education in Islamic Education Faculty",
       logo_path: "unisma.png",
       alt_name: "UNISMA Bekasi",
-      duration: "2019 - present",
+      duration: "2019 - 2025",
       descriptions: [
         "⚡ I have taken various courses related to Islamic Education, covering topics such as Contemporary Islamic Thought, Philosophy of Islamic Education, and Technology-Based Learning Methodologies.",
         "⚡ In addition, I have been involved in academic research, focusing on developing digital-based Islamic learning models and integrating Islamic values into modern education.",
@@ -490,6 +490,17 @@ const experience = {
       title: "Work",
       work: true,
       experiences: [
+        {
+          title: "Software Engineer",
+          company: "PT. Nusa Duta Solusindo",
+          company_url: "https://nds.co.id/",
+          logo_path: "nds.jpeg",
+          duration: "13 November 2025 - Now",
+          location: "BSD, Tangerang",
+          description:
+            "I am working on the backend side using Go language. The projects are from OCBC NISP Bank. where I contribute as middleware acquiring payment for OCBC's merchant",
+          color: "#108459",
+        },
         {
           title: "Backend Developer",
           company: "PT. Pro Sigmaka Mandiri",
@@ -624,6 +635,11 @@ export const competitiveBrands = {
       brandName: "MyTelkomsel",
       imageSrc: "mytelkomsel.png",
       brandLink: "http://my.telkomsel.com",
+    },
+    {
+      brandName: "OCBC NISP",
+      imageSrc: "ocbc.png",
+      brandLink: "https://www.ocbc.id/id",
     },
     {
       brandName: "Bank Syariah Indonesia",
